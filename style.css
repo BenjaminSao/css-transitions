@@ -1,0 +1,234 @@
+/* example-1 */
+.box-example-1-1
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.box-example-1-1:hover
+{
+    background-color: red;
+    transform: rotate(180deg);
+}
+
+.box-example-1-2
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    /*  This defines the amount of time to switch between the two states.
+    Tip: You should try to use milliseconds because JavaScript uses milliseconds */
+    transition-duration: 1000ms; 
+
+    /* This specifies which property to transition from. Having a transition all transforms
+    all the properties. For this example we are transition the background color. */
+    transition-property: background-color, transform;
+
+    /* This specifies the acceleration of the transition which lets you control the speed of the transition 
+    over the duration. */
+    transition-timing-function: ease-in-out;
+}
+
+.box-example-1-2:hover
+{
+    background-color: red;
+    transform: rotate(180deg);
+}
+
+
+/* example-2 */
+.box-example-2-1
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 1000ms; 
+    transition-property: background-color;
+}
+
+.box-example-2-1:hover
+{
+    background-color: cyan;
+}
+
+.box-example-2-2
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 1000ms; 
+    transition-property: transform;
+}
+
+.box-example-2-2:active
+{
+    transform: translateX(1000px);
+}
+
+.box-example-2-3
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 1000ms; 
+    transition-property: transform;
+}
+
+.box-example-2-3:hover
+{
+    transform: rotate(1080deg);
+}
+
+.box-example-2-4
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 1000ms; 
+    transition-property: width, height;
+}
+
+.box-example-2-4:hover
+{
+    width: 300px;
+    height: 300px;
+}
+
+
+/* example-3 */
+.box-example-3-1
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 1000ms; 
+    transition-property: all;
+}
+
+.box-example-3-1:active
+{
+    width: 300px;
+    height: 300px;
+    transform: translateX(1000px) rotate(1080deg);
+    background-color: cyan;
+}
+
+
+/* example-4 */
+.box-example-4-1
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 5000ms; 
+    transition-property: width;
+}
+
+.box-example-4-1:hover
+{
+    width: 300px;
+}
+
+.box-example-4-2
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 1000ms; 
+    transition-property: width;
+}
+
+.box-example-4-2:hover
+{
+    width: 300px;
+}
+
+.box-example-4-3
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 300ms; 
+    transition-property: width;
+}
+
+.box-example-4-3:hover
+{
+    width: 300px;
+}
+
+
+/* example-5 */
+.box-example-5-1
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 750ms; 
+    transition-property: width;
+    transition-timing-function: linear;
+}
+
+.box-example-5-1:hover
+{
+    width: 500px;
+}
+
+.box-example-5-2
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 750ms; 
+    transition-property: width;
+    transition-timing-function: ease-in;
+}
+
+.box-example-5-2:hover
+{
+    width: 500px;
+}
+
+.box-example-5-3
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 750ms; 
+    transition-property: width;
+    transition-timing-function: ease-out;
+}
+
+.box-example-5-3:hover
+{
+    width: 500px;
+}
+
+.box-example-5-4
+{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+
+    transition-duration: 750ms; 
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+}
+
+.box-example-5-4:hover
+{
+    width: 500px;
+}

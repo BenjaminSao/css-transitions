@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TRANSITIONS LETS GO!!! :)</title>
+
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <div class="mb-5">
+                    <h1 class="title">CSS Transitions</h1>
+                    <p class="has-text-weight-bold">What are CSS transitions?</p>
+                    <p>
+                        CSS Transitions are the way you define the transition between the two states
+                        of an element. For example when two states of an element changes through an
+                        event like click, hover, focus, and etc. we could specify a way of how we
+                        want it to look during the change from one state of an element to another.
+                    </p>
+                </div>
+
+                <div class="mb-5">
+                    <p class="has-text-weight-bold mb-2">
+                        Example #1 (No Transitions vs. Transitions)
+                    </p>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="box-example-1-1 is-flex is-align-items-center">
+                                <p class="has-text-centered has-text-white">No Transitions</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div
+                                class="box-example-1-2 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Transitions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <p class="has-text-weight-bold">What are some things I can transition?</p>
+                    <p>
+                        CSS transition allows you to transition many properties, such as the change
+                        in color, making the element move, rotating the element, size, and etc.
+                        These are done through having two state of the element. For example
+                        <code>
+                            .box-1 { size...; background-color: blue; transition-duration: 1000ms;
+                            transition-property: background-color; } .box-1:hover {
+                            background-color: red; }
+                        </code>
+                        The "transition-property" determines which properties from one state you
+                        want to change to the other state with a specific timing function and a
+                        duration (More on this later). The "transition-duration" specifies the
+                        duration of the transition from a starting state to another.
+                    </p>
+                </div>
+
+                <div class="mb-5">
+                    <p class="has-text-weight-bold mb-2">Example #2 (Transition Properties)</p>
+                    <div class="columns">
+                        <div class="column">
+                            <div
+                                class="box-example-2-1 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Color</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div
+                                class="box-example-2-2 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Movement</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div
+                                class="box-example-2-3 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Rotation</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div
+                                class="box-example-2-4 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Size</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <p class="has-text-weight-bold">Example #3 (Multiple Transitions)</p>
+                    <p class="mb-2">Note: You can have multiple transition properties.</p>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="box-example-3-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <p class="has-text-weight-bold">Duration</p>
+                    <p>
+                        In CSS transitions, you can define a set duration you want for each
+                        transition. You can use the "transition-duration" and specify an amount of
+                        time you want to switch between the two state.
+                    </p>
+                </div>
+
+                <div class="mb-5">
+                    <p class="has-text-weight-bold mb-2">Example #4 (Duration Property)</p>
+                    <div class="columns">
+                        <div class="column">
+                            <div
+                                class="box-example-4-1 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Slow</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div
+                                class="box-example-4-2 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Medium</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div
+                                class="box-example-4-3 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Fast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <p class="has-text-weight-bold">Transition Timing Function</p>
+                    <p>
+                        In CSS transitions, you can specify the acceleration of the transition and
+                        it'll lets you control the speed of the transition over the duration. With
+                        this there are some preset one such as linear (The transition accelerates at
+                        a constant speed), ease-in (The transition starts slow and accelerates
+                        towards the end), ease-out (The transition accelerates at the start and
+                        decelerates towards the end), and ease-in-out (Starts and ends slow but
+                        accelerates towards the middle). You can also define your own acceleration
+                        using cubic-bezier. This is done through the "transition-timing-function"
+                        property.
+                    </p>
+                </div>
+
+                <div class="mb-5">
+                    <p class="has-text-weight-bold mb-2">Example #5 (Transition Timing Function)</p>
+                    <div class="columns">
+                        <div class="column">
+                            <div
+                                class="box-example-5-1 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Linear</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div
+                                class="box-example-5-2 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Ease-in</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <div
+                                class="box-example-5-3 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Ease-out</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div
+                                class="box-example-5-4 is-flex is-justify-content-center is-align-items-center"
+                            >
+                                <p class="has-text-centered has-text-white">Ease-in-out</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <script type="text/javascript">
+            document.getElementById("button").onclick = (e) => {
+                document.getElementById("box-1").classList.add("foo");
+            };
+        </script> -->
+    </body>
+</html>
